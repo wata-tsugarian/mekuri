@@ -119,4 +119,4 @@
 * 画面遷移図はこちら → [Figma](https://www.figma.com/design/8jAGIfBRoxOYiYY2R1on4a/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=0-1&t=XO9vPH5Hs7CSuGFs-1)
 
 ## 🗄️ ER図
-[![Image from Gyazo](https://i.gyazo.com/5673e6979f55995406716dc16c117498.png)](https://gyazo.com/5673e6979f55995406716dc16c117498)
+[![Image from Gyazo](https://i.gyazo.com/832cb2322f67a54b7010aa2acf85a9b9.png)](https://gyazo.com/832cb2322f67a54b7010aa2acf85a9b9)
