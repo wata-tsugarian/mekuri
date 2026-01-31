@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button"
+
 type Props = {
   content: string
 }
@@ -9,12 +11,12 @@ export default function HelloComponent ({ content }: Props) {
         Hello from {content}
       </h1>
       <div className="flex items-center justify-center">
-        <button
+        <Button
           onClick={() => alert("Reactのイベントも動いているぞ!")}
           className="cursor-pointer"
         >
           動作確認ボタン
-        </button>
+        </Button>
       </div>
     </main>
   )
