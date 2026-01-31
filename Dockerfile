@@ -32,8 +32,7 @@ FROM base AS build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    NODE_MAJOR=24 && \
-    echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list && \
+    curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
     apt-get install --no-install-recommends -y build-essential git libpq-dev libyaml-dev pkg-config nodejs && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
