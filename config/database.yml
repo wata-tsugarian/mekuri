@@ -91,10 +91,8 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: app_production
-    username: app
-    password: <%= ENV["APP_DATABASE_PASSWORD"] %>
     url: <%= ENV["DATABASE_URL"] %>
+    max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 3 } %>
   cache:
     <<: *primary_production
     database: app_production_cache
