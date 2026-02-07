@@ -1,3 +1,4 @@
+import DefaultLayout from '@/layouts/DefaultLayout'
 import { createInertiaApp, type ResolvedComponent } from '@inertiajs/react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -26,7 +27,7 @@ void createInertiaApp({
     // and use the following line.
     // see https://inertia-rails.dev/guide/pages#default-layouts
     //
-    // page.default.layout ||= (page: ReactNode) => (<Layout>{page}</Layout>)
+    page.default.layout ||= (page: React.ReactNode) => (<DefaultLayout>{page}</DefaultLayout>)
 
     return page
   },
