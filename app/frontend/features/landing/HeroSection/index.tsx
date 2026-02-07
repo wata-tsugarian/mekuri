@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection () {
@@ -32,10 +33,14 @@ export default function HeroSection () {
         <div
           className="flex flex-col gap-4 sm:flex-row"
         >
-          <Button
-            className="cursor-pointer rounded-xl px-8 transition-all">
-            <span className="text-base font-bold">使い方</span>
-          </Button>
+          <Link
+            href="/guide"
+          >
+            <Button
+              className="cursor-pointer rounded-xl px-8 transition-all">
+              <span className="text-base font-bold">使い方</span>
+            </Button>
+          </Link>
         </div>
       </div>
       <div
