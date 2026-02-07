@@ -50,7 +50,7 @@ export default function HeroSection () {
           className="relative aspect-4/3 w-full max-w-137.5 overflow-hidden rounded-2xl bg-linear-to-br from-gray-100 to-gray-200 shadow-2xl dark:from-gray-800 dark:to-gray-900"
         >
           <div
-            className="absolute inset-0 flex items-center justify-center bg-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuCppYIaSeqB5mSAKFZ2KzaNOewAkfVk1VRxp3AMw8XCS42XS6R-31xN4dbAcf4UgGeXLKUtbbLOOnMp55hRLIT5gcUmnG6y6GNnXwwHu9e4ylD_ZqvTxJMUL2KkcxXRJJdXbCCuB2V_xiS58OurzEZIOKF3RUPLCMEWD5CwSxsuJI2WMz5On_jlS59YVXBwSjNa8KdZmev3OtJ64A0NaMJ53BB5LF74Mf6o3MSNBawFo6aH7dPtjIVktCqCDtKzHMpFnnNz4BBbkHwr')]"
+            className="absolute inset-0 flex items-center justify-center bg-cover bg-center bg-[url('/landing/landing_calendar.png')]"
           >
             <div
               className="absolute inset-0 bg-primary/5 mix-blend-overlay"
