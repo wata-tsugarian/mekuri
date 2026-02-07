@@ -65,6 +65,11 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# inertia
 gem "inertia_rails", "~> 3.16"
-
 gem "vite_rails", "~> 3.0"
+
+# Auth
+gem "omniauth", "~> 2.1"
+gem "omniauth-google-oauth2", "~> 1.2"
+gem "omniauth-rails_csrf_protection", "~> 2.0"
