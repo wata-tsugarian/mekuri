@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
 
   # マイページ
-  get "mypage", to: "mypage#index"
+  resource :mypage, only: %i[show edit update], controller: 'mypage'
 end
