@@ -13,7 +13,7 @@ export default function Home () {
           <HeroSection />
         </section>
         <section
-          className="flex justify-center px-4 py-24 bg-white dark:bg-background-dark lg:px-40"
+          className="flex justify-center px-4 py-24 dark:bg-background-dark lg:px-40"
         >
           <WhyUsSection />
         </section>

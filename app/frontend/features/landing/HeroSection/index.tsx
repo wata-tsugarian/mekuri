@@ -2,6 +2,8 @@ import { Link } from '@inertiajs/react';
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection () {
+  const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+
   return (
     <div
       className="flex w-full max-w-300 flex-col gap-12 lg:flex-row lg:items-center lg:gap-20"
@@ -31,16 +33,47 @@ export default function HeroSection () {
           </h2>
         </div>
         <div
-          className="flex flex-col gap-4 sm:flex-row"
+          className="flex flex-col gap-4"
         >
           <Link
             href="/guide"
           >
             <Button
-              className="cursor-pointer rounded-xl px-8 transition-all">
-              <span className="text-base font-bold">使い方</span>
+              className="cursor-pointer rounded-xl px-8 transition-all w-full sm:w-64 justify-center"
+            >
+              <span
+                className="text-base"
+              >
+                使い方
+              </span>
             </Button>
           </Link>
+          <form
+            action="/auth/google_oauth2"
+            method="post"
+            className="w-full sm:w-auto"
+          >
+            <input
+              type="hidden"
+              name="authenticity_token"
+              value={csrfToken || ''}
+            />
+            <Button
+              type="submit"
+              className="cursor-pointer rounded-xl px-8 transition-all w-full sm:w-64 justify-center"
+            >
+              <img
+                src="/auth/google.png"
+                alt="Google Logo"
+                className="w-6 h-6"
+              />
+              <span
+                className="text-base"
+              >
+                Google でログイン
+              </span>
+            </Button>
+          </form>
         </div>
       </div>
       <div
