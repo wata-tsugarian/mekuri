@@ -30,7 +30,7 @@ export default function UserEdit ({ user }: { user: UserProps }) {
               <form id='user-form' onSubmit={handleSubmit}>
                 <div className="flex flex-col gap-6">
                   <div className="grid grid-cols-3 items-center gap-4">
-                    <Label htmlFor="name" className="whitespace-nowrap">
+                    <Label htmlFor="name" className="font-semibold whitespace-nowrap">
                       新しいユーザー名
                     </Label>
                     <div className="col-span-2">
@@ -56,7 +56,7 @@ export default function UserEdit ({ user }: { user: UserProps }) {
             <Button
               type="submit"
               form='user-form'
-              className="w-full"
+              className="cursor-pointer w-full"
               disabled={processing}>
               {processing ? '送信中...' : '更新する'}
             </Button>
