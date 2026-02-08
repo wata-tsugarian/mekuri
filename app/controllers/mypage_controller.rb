@@ -20,6 +20,6 @@ class MypageController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name)
+    params.permit(:name)
   end
 end
