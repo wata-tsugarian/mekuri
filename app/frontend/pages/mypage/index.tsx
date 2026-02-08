@@ -35,10 +35,14 @@ export default function Mypage() {
                 </div>
 
                 <div className="flex flex-col gap-3 w-full max-w-xs items-center">
-                  <Button className="flex w-full items-center justify-center cursor-pointer rounded-xl px-8 transition-all sm:w-64 hover:scale-105">
-                    <Icon path={mdiAccountEdit} size={1} />
-                    <span>プロフィール編集</span>
-                  </Button>
+                  <Link
+                    href="mypage/edit"
+                  >
+                    <Button className="flex w-full items-center justify-center cursor-pointer rounded-xl px-8 transition-all sm:w-64 hover:scale-105">
+                      <Icon path={mdiAccountEdit} size={1} />
+                      <span>プロフィール編集</span>
+                    </Button>
+                  </Link>
 
                   <Link
                     href="/logout"
