@@ -39,7 +39,7 @@ export default function HeroSection () {
             href="/guide"
           >
             <Button
-              className="cursor-pointer rounded-xl px-8 transition-all w-full sm:w-64 justify-center"
+              className="cursor-pointer rounded-xl px-8 transition-all w-full sm:w-64 justify-center hover:scale-105"
             >
               <span
                 className="text-base"
@@ -60,7 +60,7 @@ export default function HeroSection () {
             />
             <Button
               type="submit"
-              className="cursor-pointer rounded-xl px-8 transition-all w-full sm:w-64 justify-center"
+              className="cursor-pointer rounded-xl px-8 transition-all w-full sm:w-64 justify-center hover:scale-105"
             >
               <img
                 src="/auth/google.png"
